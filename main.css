@@ -1,0 +1,192 @@
+body{
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    color: aliceblue;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*---------------------------------------------*/
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.5), rgba(0, 0, 0, 0.05));
+    height: 102px;
+}
+
+#titleLink{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#title{
+    margin: 1%;
+    font-size: 55px;
+    padding-left: 5%;
+}
+
+.icons{
+    width: 30px;
+}
+
+#iconsList{
+    display: flex;
+    gap: 2.5vw;
+    list-style: none;
+    padding: 0 4vw;
+}
+
+/*---------------------------------------*/
+
+#main{
+    position: relative;
+    padding-top: 102px;
+    padding-bottom: 80px;
+    height: 400vh;
+}
+
+.section {
+    position: fixed;
+    transition: opacity 0.5s ease;
+}
+
+.start{
+    background: url("images/bcg start.jpeg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+}
+
+.singer{
+    font-family: "Henny Penny", system-ui;
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pianist{
+    font-family: "Lobster", sans-serif;
+    position: absolute;
+    top: 19%;
+    right: 35%;
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.coder{
+    font-family: "Source Code Pro", monospace;
+    position: absolute;
+    top: 24%;
+    font-size: 6.5vw;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kickboxer{
+    font-family: "Sriracha", cursive;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.waterpolo{
+    font-family: "Rubik Distressed", system-ui;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*--------------------------------------*/
+
+
+.description{
+    background: url("images/bcg.jpg") no-repeat center center/cover;
+    display: flex;
+    gap: 8%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    float: right;
+}
+
+
+#whoami{
+    font-size: 1.4vw;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 25%;
+    max-width: 30%;
+}
+
+
+#whoami-title{
+    text-align: center;
+    margin-right: 20%;
+}
+
+
+#myPicture{
+    display: flex;
+    margin-bottom: 10%;
+    width: 35vw;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black 0%, black 50%, rgba(0, 0, 0, 0));
+    object-fit: contain;
+}
+
+
+.second{
+    background: url("images/second-bcg.jpg") no-repeat center center/cover;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    margin-bottom: 80px;
+}
+
+
+/*--------------------------------------------------------*/
+
+footer{
+    position: relative;
+    background: black;
+    z-index: 1001;
+    padding: 0;
+    height: 80px;
+}
+
+#footer{
+    margin: 0;
+    padding: 2% 0 2% 4%;
+}
