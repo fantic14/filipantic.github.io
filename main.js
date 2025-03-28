@@ -7,5 +7,5 @@ document.addEventListener("scroll", () => {
         document.querySelector(".description").style.opacity = `${scrollProgress}`;
     else
         document.querySelector(".description").style.opacity = `${-scrollProgress+3}`;
-    document.querySelector(".second").style.opacity = `${scrollProgress-2}`;
+    document.querySelector(".third").style.opacity = `${scrollProgress-2}`;
 });

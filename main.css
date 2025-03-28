@@ -143,11 +143,13 @@ header{
 #whoami{
     font-size: 1.4vw;
     display: flex;
+    position: fixed;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    margin-bottom: 25%;
-    max-width: 30%;
+    top: 150px;
+    left: 50%;
+    width: 30vw;
 }
 
 
@@ -159,14 +161,18 @@ header{
 
 #myPicture{
     display: flex;
-    margin-bottom: 10%;
+    position: fixed;
+    right: 55%;
+    top: 100px;
     width: 35vw;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black 0%, black 50%, rgba(0, 0, 0, 0));
     object-fit: contain;
 }
 
 
-.second{
+/*--------------------------------------------------------*/
+
+.third{
     background: url("images/second-bcg.jpg") no-repeat center center/cover;
     position: fixed;
     width: 100vw;
