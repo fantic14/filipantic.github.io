@@ -43,16 +43,16 @@
 			</ul>
 		</nav>
 	</header>
+	<button class="next-page-button" onclick="nextSlide()"><img src="images/downArrow.png" alt="next slide"></button>
 	<main id="main">
-		<section class="section start">
+		<section class="section start" id="slide-0">
 			<h2 class="welcome singer">SINGER</h2>
 			<h2 class="welcome pianist">PIANIST</h2>
 			<h2 class="welcome coder">{PROGARMMER}</h2>
 			<h2 class="welcome kickboxer">KICKBOXER</h2>
 			<h2 class="welcome waterpolo">WATERPOLO PLAYER</h2>
-			<h3></h3>
 		</section>
-		<section class="section description">
+		<section class="section description" id="slide-1">
 			<img src="images/ja%20removedBcg%20(3).png" alt="me" id="myPicture">
 			<section id="whoami">
 				<h2 id="whoami-title">Who am I?</h2>
@@ -63,10 +63,11 @@
 				passion about something else, tinkering about computers.</p>
 			</section>
 		</section>
-		<section class="section third">
+		<section class="section third" id="slide-2">
 			<h2>Goals and ambitions</h2>
 		</section>
 	</main>
+	<button class="to-top-button" onclick="toTheTop()" style="opacity: 0"><img src="images/upArrow.png" alt="back to top"></button>
 	<footer>
 		<p id="footer">© 2025 Filip Antic. All rights reserved.</p>
 	</footer>
