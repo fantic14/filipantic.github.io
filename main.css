@@ -6,6 +6,7 @@ body{
     color: aliceblue;
     margin: 0;
     overflow-x: hidden;
+    user-select: none;
 }
 
 .next-page-button{
@@ -64,19 +65,40 @@ header{
     padding: 0 4vw;
 }
 
+.navlink{
+    color: aliceblue;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.navlink:hover{
+    transform: scale(103%);
+}
+
+@media (max-aspect-ratio: 1/1) {
+    #title{
+        font-size: 35px;
+    }
+}
+
 /*---------------------------------------*/
 
 #main{
     position: relative;
     padding-top: 102px;
     padding-bottom: 80px;
-    height: 263vh;
+    height: 300vh;
 }
 
 .section {
     position: fixed;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease-in-out;
 }
+
+/*----------------------------------------*/
 
 .start{
     background: url("images/bcg start.jpeg") no-repeat center center/cover;
@@ -134,10 +156,69 @@ header{
     font-family: "Rubik Distressed", system-ui;
     position: absolute;
     top: 60%;
-    left: 60%;
+    right: 17%;
     font-size: 2.5vw;
     font-weight: 400;
     font-style: normal;
+}
+
+@media (max-aspect-ratio: 4/3){
+    .singer{
+        top: 7%;
+        left: 15%;
+        font-size: 4.5vh;
+    }
+
+    .pianist{
+        right: 20%;
+        font-size: 4.5vh;
+    }
+
+    .coder{
+        font-size: 11vh;
+        font-optical-sizing: auto;
+    }
+
+    .kickboxer{
+        left: 10%;
+        font-size: 4.5vh;
+    }
+
+    .waterpolo{
+        top: 65%;
+        right: 10%;
+        font-size: 4.5vh;
+    }
+}
+
+@media (max-aspect-ratio: 1/1){
+    .singer{
+        top: 7%;
+        left: 15%;
+        font-size: 4.5vh;
+    }
+
+    .pianist{
+        right: 20%;
+        font-size: 4.5vh;
+    }
+
+    .coder{
+        top: 30%;
+        font-size: 6vh;
+        font-optical-sizing: auto;
+    }
+
+    .kickboxer{
+        left: 10%;
+        font-size: 4.5vh;
+    }
+
+    .waterpolo{
+        top: 65%;
+        right: 0;
+        font-size: 4.5vh;
+    }
 }
 
 /*--------------------------------------*/
@@ -159,7 +240,7 @@ header{
 
 
 #whoami{
-    font-size: 1.4vw;
+    font-size: 3.2vh;
     display: flex;
     position: fixed;
     flex-wrap: wrap;
@@ -167,25 +248,25 @@ header{
     justify-content: center;
     top: 150px;
     left: 50%;
-    width: 30vw;
+    width: 40vw;
 }
 
 
 #whoami-title{
     text-align: center;
-    margin-right: 20%;
 }
 
 
 #myPicture{
     display: flex;
     position: fixed;
-    right: 55%;
+    right: 52%;
     top: 120px;
-    width: 30vw;
+    width: 65vh;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black 0%, black 50%, rgba(0, 0, 0, 0));
     object-fit: contain;
 }
+
 
 
 /*--------------------------------------------------------*/
@@ -224,7 +305,6 @@ footer{
     background: black;
     z-index: 1001;
     padding: 0;
-    height: 80px;
 }
 
 #footer{
