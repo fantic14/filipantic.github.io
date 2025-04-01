@@ -6,7 +6,7 @@ body{
     color: aliceblue;
     margin: 0;
     overflow-x: hidden;
-    user-select: none;
+    /*user-select: none;*/
 }
 
 .next-page-button{
@@ -271,16 +271,47 @@ header{
 
 /*--------------------------------------------------------*/
 
-.third{
+.connect-and-projects{
     background: url("images/second-bcg.jpg") no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 2.5vw;
     width: 100vw;
     height: 100vh;
-    z-index: 1;
     margin-bottom: 80px;
+}
+
+#projects-div{
+    position: absolute;
+    top: 20%;
+    right: 60%;
+}
+
+#social-div{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    width: calc(2*5vw + 10%);
+}
+
+.social-icons{
+    padding: 10%;
+}
+
+.slide-2-icon{
+    width: 5vw;
+}
+
+.slide-2-icon:hover{
+
+}
+
+#work-in-progress{
+    font-size: 1vw;
+    position: absolute;
+    top: 75%;
 }
 
 
