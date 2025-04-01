@@ -6,7 +6,7 @@ body{
     color: aliceblue;
     margin: 0;
     overflow-x: hidden;
-    /*user-select: none;*/
+    user-select: none;
 }
 
 .next-page-button{
