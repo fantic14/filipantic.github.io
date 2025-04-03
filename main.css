@@ -9,21 +9,29 @@ body{
     user-select: none;
 }
 
-.next-page-button{
+.diff-page-button{
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     top: 92%;
-    right: 50%;
+    left: auto;
     z-index: 2000;
     background: transparent;
     border-color: transparent;
     transition: transform 0.3s ease;
 }
 
-.next-page-button:hover{
+.next{
+    right: 50.5%;
+}
+
+.prev{
+    left: 50.5%;
+}
+
+.diff-page-button:hover{
     transform: scale(1.3);
 }
 
@@ -81,6 +89,9 @@ header{
 @media (max-aspect-ratio: 1/1) {
     #title{
         font-size: 35px;
+    }
+    .navlink{
+        display: none;
     }
 }
 
@@ -216,7 +227,7 @@ header{
 
     .waterpolo{
         top: 65%;
-        right: 0;
+        right: 5%;
         font-size: 4.5vh;
     }
 }
@@ -240,7 +251,7 @@ header{
 
 
 #whoami{
-    font-size: 3.2vh;
+    font-size: 3.1vh;
     display: flex;
     position: fixed;
     flex-wrap: wrap;
@@ -267,7 +278,29 @@ header{
     object-fit: contain;
 }
 
+@media (max-aspect-ratio: 4/3){
+    #myPicture{
+        width: 46vw;
+    }
+}
 
+@media (max-aspect-ratio: 1/1){
+    #myPicture{
+        display: none;
+    }
+    #whoami{
+        width: 70vw;
+        left: auto;
+        /*display: flex;*/
+        /*position: fixed;*/
+        /*text-align: center;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+    }
+    .description{
+        float: none;
+    }
+}
 
 /*--------------------------------------------------------*/
 
@@ -302,25 +335,41 @@ header{
 
 .slide-2-icon{
     width: 5vw;
+    transition: transform 0.5s ease-in-out;
 }
 
 .slide-2-icon:hover{
-
+    transform: scale(1.2);
 }
 
 #work-in-progress{
     font-size: 1vw;
     position: absolute;
-    top: 75%;
+    top: 70%;
+    left: auto;
 }
 
+@media (max-aspect-ratio: 4/3){
+    #projects-div{
+        top: 5%;
+        right: auto;
+    }
+    #social-div{
+        top: 35%;
+        left: auto;
+        width: calc(2*16vh + 10%);
+    }
+    .slide-2-icon{
+        width: 12vh;
+    }
+}
 
 /*--------------------------------------------------------*/
 
 .to-top-button{
     position: fixed;
-    left: 95%;
-    top: 90%;
+    right: 3%;
+    top: 93%;
     z-index: 1002;
     background-color: transparent;
     border: none;

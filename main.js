@@ -11,13 +11,17 @@ document.addEventListener("scroll", () => {
 
     if (scrollProgress <= 0.5)
         document.querySelector(".description").style.opacity = `${scrollProgress}`;
-    else
-        document.querySelector(".description").style.opacity = `${-scrollProgress+2}`;
+    else {
+        document.querySelector(".description").style.opacity = `${-scrollProgress + 2.5}`;
+        document.querySelector(".start").style.opacity = `0`;
+    }
 
-    if (scrollProgress <= 1.5)
+    if (scrollProgress <= 1.3)
         document.querySelector(".connect-and-projects").style.opacity = `0`;
-    else
-        document.querySelector(".connect-and-projects").style.opacity = `${scrollProgress-0.5}`;
+    else {
+        document.querySelector(".connect-and-projects").style.opacity = `${scrollProgress}`;
+        document.querySelector(".description").style.opacity = `0.3`;
+    }
 
     if (scrollProgress === 0)
         document.querySelector(".to-top-button").style.opacity = `0`;
