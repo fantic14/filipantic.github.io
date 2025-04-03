@@ -26,22 +26,24 @@ document.addEventListener("scroll", () => {
 
     currentSlide = Math.ceil(scrollProgress);
 
-    if (currentSlide === 0) {
-        document.querySelector(".start").style.zIndex = "1000";
-        document.querySelector(".description").style.zIndex = "1";
-        document.querySelector(".connect-and-projects").style.zIndex = "-1";
-        console.log(currentSlide);
-    } else if (currentSlide === 1) {
-        document.querySelector(".start").style.zIndex = "-1";
-        document.querySelector(".description").style.zIndex = "1000";
-        document.querySelector(".connect-and-projects").style.zIndex = "-1";
-        console.log(currentSlide);
-    } else{
-        document.querySelector(".start").style.zIndex = "-1";
-        document.querySelector(".description").style.zIndex = "-1";
-        document.querySelector(".connect-and-projects").style.zIndex = "1000";
-        console.log(currentSlide);
-    }
+    setTimeout(() => {
+        if (currentSlide === 0) {
+            document.querySelector(".start").style.zIndex = "1000";
+            document.querySelector(".description").style.zIndex = "1";
+            document.querySelector(".connect-and-projects").style.zIndex = "-1";
+            console.log(currentSlide);
+        } else if (currentSlide === 1) {
+            document.querySelector(".start").style.zIndex = "-1";
+            document.querySelector(".description").style.zIndex = "1000";
+            document.querySelector(".connect-and-projects").style.zIndex = "-1";
+            console.log(currentSlide);
+        } else {
+            document.querySelector(".start").style.zIndex = "-1";
+            document.querySelector(".description").style.zIndex = "-1";
+            document.querySelector(".connect-and-projects").style.zIndex = "1000";
+            console.log(currentSlide);
+        }
+    }, 1000);
 
     if (scrollProgress >= 1.9)
         document.querySelector(".next-page-button").style.opacity = `0`;
@@ -76,8 +78,12 @@ function prevSlide() {
 }
 
 function toSpecificSlide(slideNumber){
-    currentSlide = slideNumber;
-    window.scrollTo({top: currentSlide * window.innerHeight, behavior: "smooth"});
+    while (currentSlide > slideNumber){
+        prevSlide();
+    }
+    while (currentSlide < slideNumber){
+        nextSlide();
+    }
 }
 
 function toTheTop() {
