@@ -350,6 +350,9 @@ header{
 }
 
 @media (max-aspect-ratio: 4/3){
+    .connect-and-projects{
+        font-size: 3.5vw;
+    }
     #projects-div{
         top: 5%;
         right: auto;
@@ -361,6 +364,21 @@ header{
     }
     .slide-2-icon{
         width: 12vh;
+    }
+    .social-icons{
+        padding: 2%;
+    }
+}
+
+@media (max-aspect-ratio: 1/1){
+    .connect-and-projects{
+        font-size: 5vw;
+    }
+    #projects-div{
+        top: 0;
+    }
+    #social-div{
+        top: 35%;
     }
 }
 
